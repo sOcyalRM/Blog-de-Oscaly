@@ -306,3 +306,17 @@ height:0;
 }*/
 
 
+/*C MAS MAS*/
+
+.cmm_main{
+  display: grid;
+  width: 1280px;
+  margin-top: 65px ;
+  background-color: antiquewhite;
+  margin: 65px auto;
+}
+
+.img_cmm img{
+  width: 400px;
+  height: 300px;
+}
