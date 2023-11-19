@@ -316,7 +316,18 @@ height:0;
   margin: 65px auto;
 }
 
+.img_cmm{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
 .img_cmm img{
-  width: 400px;
+  margin: 5px;
+  width: 700px;
   height: 300px;
+  grid: 1;
+}
+
+.img_cmm p{
+  grid: 2;
 }
