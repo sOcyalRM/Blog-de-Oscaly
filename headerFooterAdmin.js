@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi Blog</title>
-        
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/all.min.css"> 
 
-        <link rel="stylesheet" href="css/media-query.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    </head>
-
-    <body>
+class MyHeader extends HTMLElement{
+    ConnectedCallback(){
+        this.innerHTML = `
+        <p>
         <header class="header">
             <div class="social">
                 <div class="social-icons">
@@ -59,25 +48,21 @@
             </nav>
             
         </header>
+        </p>
 
-        <main class="cmm_main">
-            <div class="img_cmm">
-                <img src="img/fragmento Cmasmas.JPG" alt="Imagen de codigo">
-                <p> C++ es un lenguaje de programacion con el que es posible desarrollar complejos proyectos. 
-                    C++ es un lenguaje derivado del Lenguaje C. Este fue el lenguaje en el que empece mi viaje en la programacion.
-                    Los primeros conocimientos que adquiri aprendiendo este lenguage estuvo relacionado a la progacion estructurada.
-                    En esta imagen se puede apreciar lo que pude lograr al final del curso.
-                </p>
-            </div>
-            
-        </main>
-        <footer class="footerPie">
-            <p>Author: Oscaly Rosario</p>
+        `       
+    }
+}
+
+
+class MyFooter extends HTMLElement{
+    ConnectedCallback(){
+        this.innerHTML = `
             <p><a href="mailto:hege@example.com">oscaly@example.com</a></p>
-          </footer>
-
-          <!-- NewHeader = myHeader-->
-          <!-- Newfooter = myFooter-->
+        `
+    }
         
-    </body>
+}
 
+customElements.define( 'My-Header', MyHeader )
+customElements.define( 'My-Footer', MyFooter )
