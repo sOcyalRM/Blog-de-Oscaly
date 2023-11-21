@@ -331,3 +331,72 @@ height:0;
 .img_cmm p{
   grid: 2;
 }
+
+/*LOGROS*/
+.main_logros{
+  width: 1280px;
+  margin: 65px auto;
+  background-color: #ececc8;
+}
+
+
+/*CONTACTO*/
+.main_contacto{
+  width: 1280px;
+  background-color: #ececc8;
+  margin: 65px auto;
+}
+
+.sec_contacto{
+  padding: 100px 200px;
+
+}
+
+.sec_contacto h1{
+  color:#3b0b0b;
+  margin-bottom: 50px;
+}
+
+.bar_nombre{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 30px;
+
+}
+
+.bar_nombre h3{
+  grid: 1;
+}
+
+.bar_nombre input{
+  grid: 2;
+}
+
+.bar_email {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 30px;
+}
+
+.bar_email h3{
+  grid: 1;
+}
+
+.bar_email input{
+  grid: 2;
+}
+
+.bar_mensaje{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 30px;
+}
+
+.bar_mensaje h3{
+  grid: 1;
+}
+
+.bar_mensaje textarea{
+  grid: 2;
+  height: 90px;
+}
