@@ -34,7 +34,8 @@ body{
   
 }
 
-/* HEADER 
+/* ================================================================================================================================
+HEADER 
 Social*/
 
 .header{
@@ -78,12 +79,7 @@ height:0;
 .nav-main{
   width: 100%;
   height: 30px;
-  /*display: grid;  --->Genera divisiones del grid
-  grid-template-rows: 1fr 1fr;*/
-  
-
 }
-
 
 /*nav ul li{
   display: inline-block;
@@ -146,7 +142,8 @@ height:0;
     margin-left: 10px;
 }
 
-/* Body*/
+/* ================================================================================================================================
+Body*/
 .searchnav{
   font-size: 30px;
   padding: 6px 8px;
@@ -160,8 +157,7 @@ height:0;
 
 .main-home{
     display: grid;
-   width: 1280px;
-    margin-top: 65px ;
+    width: 1280px;
     /*grid-template-columns: 1fr 4fr 1fr;*/
    /* grid-template-rows: 50% 50%;*/
    /* background-image: url('../img/fondopara_sitio.JPG');
@@ -172,7 +168,6 @@ height:0;
     background-color: antiquewhite;
     grid-template-rows: auto auto auto;
     margin: 65px auto;
-    
 }
 
 
@@ -197,9 +192,8 @@ height:0;
 
 .parrafo {
   justify-content: center;
-  margin-bottom: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding: 40px;
+  font-size: 20px;
 }
 
 
@@ -219,7 +213,8 @@ height:0;
 
 
 
-/*PERFIL*/
+/*================================================================================================================================
+PERFIL*/
 
 .perfil_main{
   display: grid;
@@ -263,7 +258,7 @@ height:0;
   /*Continuar desde aqui y revisar bien. Estudiar cuidadosamente*/
 }
 
-.conocimientos{
+.sec_conocimientos{
   display: grid;
   width: 1280px;
   margin-top: 65px;
@@ -274,39 +269,25 @@ height:0;
   padding: 10px 80px 50px;
 }*/ /*Este padding no puede ser aplicado a multiples elementos*/
 
-.leng_detalles img{
-  width: 100%;
-  
-}
-
-/*.leng_detalles{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr;
-  padding: 10px 20px 45px;
-
-}*/
 .leng_detalles{ /*Revisar cuidadosamente*/
   display: inline-block;
   padding: 10px 20px 45px;
-  max-width: 25%;
+  max-width: 25%; /*Establece el tamaño de este segmento como un 25% del tamaño del elemento padre*/
   margin-bottom: 30px;
 }
+.leng_detalles img{
+  width: 100%; /*Establece el tamaño de la imagen como el 100% del tamaño del elemento donde esta incluida*/
+  
+}
+
  /*Probando span con inline*/
 .prueba{
  color: #e7562efb;
  
 }
 
-/*.leng_detalles img{
-  grid-column: 1;
-}
-.leng_detalles p{
-  grid-column: 2;
-}*/
-
-
-/*C MAS MAS*/
+/*================================================================================================================================
+C MAS MAS*/
 
 .cmm_main{
   display: grid;
@@ -332,15 +313,85 @@ height:0;
   grid: 2;
 }
 
-/*LOGROS*/
+/*================================================================================================================================
+LOGROS*/
 .main_logros{
   width: 1280px;
   margin: 65px auto;
   background-color: #ececc8;
 }
 
+.k_logro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
 
-/*CONTACTO*/
+.k_logro img{
+  height: 99%;
+  width: 95%;
+  grid-column: 1;
+}
+
+.k_descripcion{
+  grid-column: 2;
+}
+
+.nc_logro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+
+.nc_logro img{
+  height: 99%;
+  width: 95%;
+  grid-column: 1;
+}
+
+.nc_descripcion{
+  grid-column: 2;
+}
+
+.atl_logro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+
+.atl_logro img{
+  height: 99%;
+  width: 95%;
+  grid-column: 1;
+}
+
+.atl_descripcion{
+  grid-column: 2;
+}
+
+.oc_logro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px;
+}
+
+.oc_logro img{
+  height: 99%;
+  width: 95%;
+  grid-column: 1;
+}
+
+.oc_descripcion{
+  grid-column: 2;
+}
+
+
+
+
+
+
+/*================================================================================================================================
+CONTACTO*/
 .main_contacto{
   width: 1280px;
   background-color: #ececc8;
@@ -349,12 +400,14 @@ height:0;
 
 .sec_contacto{
   padding: 100px 200px;
-
+  font-style: italic;
+  font-size: larger;
 }
 
 .sec_contacto h1{
   color:#3b0b0b;
   margin-bottom: 50px;
+  font-size: 35px;
 }
 
 .bar_nombre{
@@ -398,5 +451,7 @@ height:0;
 
 .bar_mensaje textarea{
   grid: 2;
-  height: 90px;
+  height: 120px;
 }
+
+/*================================================================================================================================*/
