@@ -11,8 +11,6 @@
   text-decoration: none;/*Para eliminar el subrayado*/
   box-sizing: border-box;
   list-style: none;     /*Elimina los puntos de todas las listas*/
-  position: sticky;
-
 }
 
 
@@ -24,7 +22,7 @@ body{
 }
 
 .home-body{
-  position: sticky;  /*Fixed, relative, static, sticky, abolute/ Para definir la imagen de fondo y desplazamiento en la pagina*/
+  position: relative;  /*Fixed, relative, static, sticky, abolute/ Para definir la imagen de fondo y desplazamiento en la pagina*/
   top: 0;
   bottom: 0;
   left: 0;
@@ -40,18 +38,31 @@ Social*/
 
 .header{
   width: 100%;
-  height: 55px;
+  height: 112px;
   background-color: #e4d7d9;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
   border-bottom:solid 1px #110d0d; /*Para crear linea que separa elementos div*/
   margin: 0 auto;
+  margin-bottom: 80px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease;
 }
+
+.header.abajo{
+  background: #fff;
+  padding: 8px;
+}
+
+.header.abajo .menu__link:hover{
+  background: #a5c787d5;
+  transition: .5s;
+}
+
 
 .social{
   
   width: 1280px; /*1280px es el tamaño estandar de un sitio web. Puede ser incrementado hasta 1920px para monitores mas grandes*/
-  height: 50px;
   display: grid;
   box-sizing: border-box;
   margin: 0 auto; /*Mantiene todo el contenido del div centrado*/
@@ -66,7 +77,6 @@ Social*/
   justify-content: space-between;
   justify-self: end;
   margin-right: 25px;
-
 }
 /*hr{ 
   border: 0;
@@ -79,39 +89,48 @@ height:0;
 .nav-main{
   width: 100%;
   height: 30px;
-}
+  }
 
 /*nav ul li{
   display: inline-block;
 }*/
 
+.menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .menu__item{
   float: right; /*Envia los elementos del li hacia la derecha de la pantalla*/
   position: relative;
   list-style-type: none; /* Quita el marcador de un elemento li o ul*/
-  margin-right: 25px;
+  margin-right: 28px;
 
 }
 
 .menu__link{ /*Clase con la que manipulo los elementos a de menu__item*/
   color: #0a0a0b;
-  font-size: 18px;
+  font-size: 22px;
   border-radius: 3px;
   text-transform: uppercase;
-  margin: 0 10px ; /* Separa los elementos li por la cantidad de pixeles especificada*/
+  margin: 0 10px;
+  display: inline-block;
+  
+   /* Separa los elementos li por la cantidad de pixeles especificada*/
 }
 
 .menu__link.active, .menu__link:hover{
-  background: rgb(255, 255, 255);
+  background: #ffffff;
   transition: .5s;
 }
 
 .nav-home{
-  width: 1280px;
   display: grid;
+  height: 75px;
   grid-template-columns: 1fr 1fr;
-  height: 300px;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .home_icon{
@@ -146,12 +165,12 @@ height:0;
 Body*/
 .searchnav{
   font-size: 30px;
-  padding: 6px 8px;
+  padding: 21px 8px;
 }
 
 .barrabusqueda{
-  font-size: 20px;
-  width: 500px;
+  font-size: 24px;
+  width: 420px;
   border-color: #061c1c;
 }
 
@@ -167,7 +186,10 @@ Body*/
     background-size: cover;*/
     background-color: antiquewhite;
     grid-template-rows: auto auto auto;
-    margin: 65px auto;
+    margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
+    background-size: cover;
+    background-position: center center;
+
 }
 
 
@@ -219,11 +241,11 @@ PERFIL*/
 .perfil_main{
   display: grid;
   width: 1280px;
-  margin-top: 65px ;
+  margin-top: 200px ;
   background-color: antiquewhite;
-  margin: 65px auto;
-  
+  margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
 }
+
 
 .perfil_intro{
   background-color: #e6e9ed;
@@ -292,9 +314,10 @@ C MAS MAS*/
 .cmm_main{
   display: grid;
   width: 1280px;
-  margin-top: 65px ;
+  margin-top: 200px ;
   background-color: antiquewhite;
-  margin: 65px auto;
+  margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
+  /*margin: 65px auto;*/
 }
 
 .img_cmm{
@@ -317,7 +340,7 @@ C MAS MAS*/
 LOGROS*/
 .main_logros{
   width: 1280px;
-  margin: 65px auto;
+  margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
   background-color: #ececc8;
 }
 
@@ -395,7 +418,7 @@ CONTACTO*/
 .main_contacto{
   width: 1280px;
   background-color: #ececc8;
-  margin: 65px auto;
+  margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
 }
 
 .sec_contacto{
@@ -455,3 +478,9 @@ CONTACTO*/
 }
 
 /*================================================================================================================================*/
+
+/*
+  Continuar en hacer que la barra superior se quede fija mientras se hace scroll
+*/
+
+
