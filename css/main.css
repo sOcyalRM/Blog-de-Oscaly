@@ -239,6 +239,7 @@ Body*/
 
 .parrafo {
   justify-content: center;
+  text-align: justify;
   padding: 40px;
   font-size: 20px;
 }
@@ -303,6 +304,10 @@ PERFIL*/
   
 }
 
+.intro_content h2{
+  padding: 15px;
+}
+
 .intro_content img{
   grid-column: 1;
   width: 90%;
@@ -319,9 +324,14 @@ PERFIL*/
 
 .content_detail{
   grid-column: 2;
-  width: 95%;
+  width: 98%;
   margin-bottom: 10px;
+  margin-top: 10px;
   /*Continuar desde aqui y revisar bien. Estudiar cuidadosamente*/
+}
+
+.content_detail p{
+  text-align: justify;
 }
 
 .sec_conocimientos{
@@ -329,6 +339,10 @@ PERFIL*/
   width: 1280px;
   margin-top: 65px;
   margin: 65px auto;
+}
+
+.sec_conocimientos p{
+  text-align: justify; /*Justifica todos los parrafos de esta seccion*/
 }
 
 /*.def_conocimientos{
@@ -357,8 +371,8 @@ C MAS MAS*/
 
 .cmm_main{
   display: grid;
-  width: 1280px;
-  margin-top: 200px ;
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 80vh;
   background-color: antiquewhite;
   margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
   /*margin: 65px auto;*/
@@ -367,17 +381,190 @@ C MAS MAS*/
 .img_cmm{
   display: grid;
   grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
+
+.img_cmm h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
 }
 
 .img_cmm img{
   margin: 5px;
   width: 700px;
   height: 300px;
-  grid: 1;
+  grid-column: 1;
 }
 
 .img_cmm p{
-  grid: 2;
+  text-align: justify;
+  grid-column: 2;
+}
+
+/*================================================================================================================================
+C SHARP
+*/
+.sharp_main{
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 150vh;
+  background-color: antiquewhite;
+  margin: 100px auto 60px auto; /
+}
+
+.sharp_info{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
+
+.sharp_info h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
+}
+
+.sharp_info img{
+  margin: 5px;
+  width: 700px;
+  height: 300px;
+  grid-column: 1;
+}
+
+.sharp_info p{
+  text-align: justify;
+  grid-column: 2;
+}
+
+/*================================================================================================================================
+JAVA
+*/
+.java_main{
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 150vh;
+  background-color: antiquewhite;
+  margin: 100px auto 60px auto; /
+}
+
+.java_info{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
+
+.java_info h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
+}
+
+.java_info img{
+  margin: 5px;
+  width: 700px;
+  height: 300px;
+  grid-column: 1;
+}
+
+.java_info p{
+  text-align: justify;
+  grid-column: 2;
+}
+
+/*================================================================================================================================
+JAVASCRIPT
+*/
+.js_main{
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 150vh;
+  background-color: antiquewhite;
+  margin: 100px auto 60px auto; /
+}
+
+.js_info{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
+
+.js_info h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
+}
+
+.js_info img{
+  margin: 5px;
+  width: 700px;
+  height: 300px;
+  grid-column: 1;
+}
+
+.js_info p{
+  text-align: justify;
+  grid-column: 2;
+}
+
+/*================================================================================================================================
+PHP
+*/
+.php_main{
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 150vh;
+  background-color: antiquewhite;
+  margin: 100px auto 60px auto; /
+}
+
+.php_info{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
+
+.php_info h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
+}
+
+.php_info img{
+  margin: 5px;
+  width: 700px;
+  height: 300px;
+  grid-column: 1;
+}
+
+.php_info p{
+  text-align: justify;
+  grid-column: 2;
+}
+
+
+/*================================================================================================================================
+PYTHON
+*/
+.python_main{
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 150vh;
+  background-color: antiquewhite;
+  margin: 100px auto 60px auto; /
+}
+
+.python_info{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 15px;
+}
+
+.python_info h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 5px auto 5px;
+}
+
+.python_info img{
+  margin: 5px;
+  width: 700px;
+  height: 300px;
+  grid-column: 1;
+}
+
+.python_info p{
+  text-align: justify;
+  grid-column: 2;
 }
 
 /*================================================================================================================================
@@ -395,6 +582,18 @@ LOGROS*/
   background-color: #edf5f9;
 }
 
+.main_logros p{/*Manejo todos los parrafos dentro de este main*/
+  text-align: justify;
+}
+
+.main_logros h2{
+  padding: 10px;
+}
+
+.main_logros div{
+  padding: 15px;
+}
+
 .k_logro{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -403,7 +602,7 @@ LOGROS*/
 }
 
 .k_logro img{
-  height: 200px;
+  height: 99%;
   width: 95%;
   grid-column: 1;
 }
@@ -419,7 +618,7 @@ LOGROS*/
 }
 
 .nc_logro img{
-  height: 200px;
+  height: 99%;
   width: 95%;
   grid-column: 1;
 }
@@ -461,11 +660,12 @@ LOGROS*/
 }
 
 .lg_figure{
-  height: 300px;
-  width: 200px;
+  height: 390px;
+  width: 380px;
 }
 .lg_figure img.active, .lg_figure img:hover{
-  padding: 15px;
+  padding: 5px;
+  transition: .8s;
 }
 
 
