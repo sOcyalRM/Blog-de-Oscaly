@@ -11,8 +11,8 @@ function triggerAnimation(entries){
 
 const options = {
     root: null,
-    rootMargin: "0px",
-    threshold: .99
+    rootMargin: "-56px",/*Hace mas pequeño el contenedor(el area que determina cuando aparecera y desaparecera la imagen) */
+    threshold: .96
 }
 const observer = new IntersectionObserver(triggerAnimation, options);
 

@@ -39,7 +39,7 @@ Social*/
 
 .header{
   width: 100%;
-  height: 112px;
+  height: 90px;
   background-color: #e4d7d9;
   border-bottom:solid 1px #110d0d; /*Para crear linea que separa elementos div*/
   margin: 0 auto;
@@ -50,17 +50,7 @@ Social*/
   transition: all 0.5s ease;
 }
 
-.header.abajo{
-  background: #fff;
-  padding: 8px;
-}
-
-.header.abajo .menu__link:hover{
-  background: #a5c787d5;
-  transition: 0.7s;
-}
-
-.social{
+.header_menu{
   
   width: 1280px; /*1280px es el tamaño estandar de un sitio web. Puede ser incrementado hasta 1920px para monitores mas grandes*/
   display: grid;
@@ -68,16 +58,30 @@ Social*/
   margin: 0 auto; /*Mantiene todo el contenido del div centrado*/
 }
 
-.social-icons{
-  font-size: 20px;
-  width: 250px;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  justify-self: end;
-  margin-right: 25px;
+.header.abajo{
+  background: #fff;
+  padding: 8px;
+  
 }
+
+.header.abajo .menu__link:hover{
+  background-color: #e4d7d9;
+  transition: 0.7s;
+  padding: 1px;
+}
+
+.nav-main{
+  width: 100%;
+  height: 30px;
+  }
+
+  .menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 6px ;
+  }
+
+
 /*hr{ 
   border: 0;
 border-top: 2px solid #999; 
@@ -86,19 +90,13 @@ height:0;
 
 } Para editar linea divisoria agregada en Html*/
 
-.nav-main{
-  width: 100%;
-  height: 30px;
-  }
+
 
 /*nav ul li{
   display: inline-block;
 }*/
 
-.menu{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+
 
 .menu__item{
   float: right; /*Envia los elementos del li hacia la derecha de la pantalla*/
@@ -120,6 +118,7 @@ height:0;
 }
 
 .menu__link.active, .menu__link:hover{
+  padding: 1px;
   background: #ffffff;
   transition: .5s;
 }
@@ -177,13 +176,10 @@ Body*/
 .main-home{
     display: grid;
     width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
-
+    height: 150vh;
     /*grid-template-columns: 1fr 4fr 1fr;*/
    /* grid-template-rows: 50% 50%;*/
    /* background-image: url('../img/fondopara_sitio.JPG');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;*/
     background-color: antiquewhite;
     grid-template-rows: auto auto auto;
@@ -196,7 +192,7 @@ Body*/
 [data-animation = "show"]{
   opacity: 0;
   transform: scale(0);
-  transition: .6s ease-in .1s;
+  transition: .1s ease-in .01s;
 
   --opacity: 1;
   --transform: scale(1);
@@ -208,8 +204,18 @@ Body*/
 }
 
 .prof_figure{
-  padding-top: 50px;
+  padding-top: 60px ;
+  height: 20px;
 }
+
+.prof_figure img{
+  object-fit:unset;
+}
+
+.prof_figure img.active, .prof_figure img:hover{
+  margin: 5px;
+}
+
 
 
 .div-descr{
@@ -239,9 +245,28 @@ Body*/
 
 
 .footerPie {
+  padding: 15px 5px 40px 5px;
   background-color: #e4d7d9;
   border-top:solid 1px #110d0d; /*Para crear linea en parte superior que separa elementos*/
 }
+
+.social-icons{
+  display: flex;
+  width: 800px;
+  padding: 15px;
+  height: auto;
+  margin: 0 auto;
+  font-size: 32px;
+  justify-content: space-between;
+}
+
+.social-icons a.active, .social-icons a:hover{
+  background-color: #fff;
+  transition: .3s;
+  margin: 10px;
+  padding: 5px;
+}
+
 
 
 /*Para imagen en una seccion o toda la pagina web*/
@@ -358,19 +383,27 @@ C MAS MAS*/
 /*================================================================================================================================
 LOGROS*/
 .main_logros{
-  width: 1280px;
+  width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+  height: 272vh;
   margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
   background-color: #ececc8;
+}
+
+.main_logros h1{
+  padding: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #edf5f9;
 }
 
 .k_logro{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 15px;
+  padding: 20px;
+  margin-top: 10px;
 }
 
 .k_logro img{
-  height: 99%;
+  height: 200px;
   width: 95%;
   grid-column: 1;
 }
@@ -386,7 +419,7 @@ LOGROS*/
 }
 
 .nc_logro img{
-  height: 99%;
+  height: 200px;
   width: 95%;
   grid-column: 1;
 }
@@ -425,6 +458,14 @@ LOGROS*/
 
 .oc_descripcion{
   grid-column: 2;
+}
+
+.lg_figure{
+  height: 300px;
+  width: 200px;
+}
+.lg_figure img.active, .lg_figure img:hover{
+  padding: 15px;
 }
 
 
