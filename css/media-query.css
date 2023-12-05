@@ -14,8 +14,16 @@
 }
 
 @media screen and (max-width: 858px){
+
+    .icon_search{
+        position: fixed;
+        font-size: 20px;
+        margin: 5px 0 0 35%;
+    }
     .checkbtn{
+        position: fixed;
         display: block;
+        margin: 5px 0 0 40%;
     }
 
      .nav-menu-right{
@@ -51,6 +59,8 @@
     #check:checked ~ .nav-menu-right {
         left: -2%;
     }
+
+
 }
 
 

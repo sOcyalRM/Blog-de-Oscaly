@@ -24,23 +24,23 @@
                         <nav class="home_icon">
                             <div class="logo-inicio">
                                 <a href="index.html">
-                                <img src="img/HomeSitio.JPG " width="300" height="60" alt="Logo-inicio"> 
-                                </a>
-                                
+                                <img src="img/HomeSitio.JPG " width="270" height="45" alt="Logo-inicio"> 
+                                </a>   
                             </div>
-                            <div class="searchnav">
-                                <input class="barrabusqueda" type="text" placeholder="Buscar...">
-                            </div>
-                        </nav>
+                        </nav> 
                     </nav>
 
                     <nav class = "nav-main">
+                        <div id="ctn_icon_search" class="icon_search">
+                            <i class="fa fa-search" aria-hidden="true" id="icon-search"></i>
+                        </div>
+
                         <input type="checkbox" id="check">
                         <label for="check" class="checkbtn">
                             <i class="fas fa-bars"></i>
                         </label>
-                        <ul class = "nav-menu-right">
-                            <!-- Probar insertar el boton en esta etiqueta-->
+                        
+                        <ul class = "nav-menu-right" >
                             <li class = "menu__item">
                                 <a class = "menu__link" href="index.html">Inicio</a>
                                 <a class = "menu__link" href="perfil.html">Perfil</a>
@@ -49,9 +49,26 @@
                             </li>
                         </ul>
                     
-                    </nav>
-                    
+                    </nav>  
                 </div>
+               
+                <div class="searchnav" id="ctn-bars-search">
+                    <input class="barrabusqueda" type="text" id="inputSearch" placeholder="Buscar..."> 
+                </div>
+                
+                    <ul id="box-search">
+                        <li><a href="#"><i class="fa fa-search"></i>HTML</a></li>
+                        <li><a href="#"><i class="fa fa-search"></i>JavaScript</a></li>
+                        <li><a href="#"><i class="fa fa-search"></i>C++</a></li>
+                        <li><a href="#"><i class="fa fa-search"></i>Python</a></li>
+                        <li><a href="#"><i class="fa fa-search"></i>PHP</a></li>
+                    </ul>
+                
+
+                <div id="cover-ctn-search"> 
+
+                </div>
+
             </div> 
      </header>
 
@@ -83,5 +100,6 @@
                 <p>Todos los derechos reservados ©2023</p>
         </footer>
       <script src="menu.js"></script>
+      <script src="js/main.js"></script>
     </body>
 </html>

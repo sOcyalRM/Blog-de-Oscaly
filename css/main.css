@@ -47,7 +47,7 @@ Social*/
   left: 0;
   top: 0;
   transition: all 0.5s ease;
-  z-index: 10;/*Investigar funcion, no se esta aplicando*/
+  z-index: 15;
 }
 
 .header_menu{
@@ -64,7 +64,7 @@ Social*/
 .header.abajo{
   background: #fff;
   padding: 4px;
-  
+  z-index: 11;
 }
 
 .header.abajo .menu__link:hover{
@@ -80,7 +80,7 @@ Social*/
   grid-template-columns: 1fr 2fr;
   padding-top: 6px;
   margin: 6px auto;
-  
+  z-index: 12;/*Investigar funcion, no se esta aplicando*/
 }
 
 .nav-home{
@@ -170,13 +170,18 @@ height:0;
 }
 
 .searchnav{
+  position: relative;
   width: 100%;
   height: 48px;
+  top: -120px;
   font-size: 30px;
   padding: 4px 2px;
-  margin: 0 auto;
+  margin: 0 68px auto 0;
   background-color: #ffffff;
   grid-row: 2;
+  z-index: 9;/*Investigar funcion y continuar desde aqui*/
+  /*transition: all .2s;*/
+  
 }
 
 .searchnav ul {
@@ -190,10 +195,9 @@ height:0;
 
 .barrabusqueda{
   /*display: block;*/
-  margin-top: 500px;
   font-size: 24px;
   width: 720px;
-  z-index: 9;/*Investigar funcion*/
+
 }
 
 #box-search{
@@ -204,6 +208,7 @@ height:0;
   width: 1200px;
   background: #fff;
   z-index: 8;
+  display: block;
 }
 
 #box-search li a{
@@ -245,18 +250,21 @@ height:0;
 .icon_search{
   width: 18px;
   height: auto;
-  margin-top: 8px;
+  margin-top: 5px;
   grid-column: 1;
+  font-size: 25px;
 }
 
 
 #cover-ctn-search{
   width: 100%;
   height: 100%;
+  margin-top: 62px; /*Parte superior del header esta siendo cubierta, su z-index no se esta aplicando */
   position: fixed;
   left: 0;
   background: #00000080;
   z-index: 7;
+  display: none;
 }
 
 
