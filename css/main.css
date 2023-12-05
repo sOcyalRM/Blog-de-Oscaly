@@ -39,28 +39,31 @@ Social*/
 
 .header{
   width: 100%;
-  height: 90px;
+  height: 62px;
   background-color: #e4d7d9;
-  border-bottom:solid 1px #110d0d; /*Para crear linea que separa elementos div*/
+  /*border-bottom:solid 1px #110d0d; /*Para crear linea que separa elementos div*/
   margin: 0 auto;
-
   position: fixed;
   left: 0;
   top: 0;
   transition: all 0.5s ease;
+  z-index: 10;/*Investigar funcion, no se esta aplicando*/
 }
 
 .header_menu{
-  
-  width: 1280px; /*1280px es el tamaño estandar de un sitio web. Puede ser incrementado hasta 1920px para monitores mas grandes*/
   display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 100px;
+  width: 1280px; /*1280px es el tamaño estandar de un sitio web. Puede ser incrementado hasta 1920px para monitores mas grandes*/
   box-sizing: border-box;
   margin: 0 auto; /*Mantiene todo el contenido del div centrado*/
 }
 
+
 .header.abajo{
   background: #fff;
-  padding: 8px;
+  padding: 4px;
   
 }
 
@@ -70,16 +73,44 @@ Social*/
   padding: 1px;
 }
 
+.menu{
+  width: 1280px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-top: 6px;
+  margin: 6px auto;
+  
+}
+
+.nav-home{
+  height: 75px;
+  grid-column: 1;
+  justify-content: left;
+  /*align-items: center;*/
+}
+
+.home_icon{
+  display: flex;
+  size-adjust: 100px;
+}
+
 .nav-main{
+  display: grid;
+  grid-column: 1fr 3fr;
+  justify-content: right;
   width: 100%;
   height: 30px;
+  grid-column: 2;
   }
 
-  .menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 6px ;
-  }
+  .nav-menu-right{
+    grid-column: 2;
+    display: inline-block; /*Hace que los elementos pasen de vertical a horizontal*/
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 10px;
+}
 
 
 /*hr{ 
@@ -102,7 +133,7 @@ height:0;
   float: right; /*Envia los elementos del li hacia la derecha de la pantalla*/
   position: relative;
   list-style-type: none; /* Quita el marcador de un elemento li o ul*/
-  margin-right: 28px;
+
 
 }
 
@@ -111,7 +142,7 @@ height:0;
   font-size: 22px;
   border-radius: 3px;
   text-transform: uppercase;
-  margin: 0 10px;
+  margin: 0 30px;
   display: inline-block;
   
    /* Separa los elementos li por la cantidad de pixeles especificada*/
@@ -123,20 +154,6 @@ height:0;
   transition: .5s;
 }
 
-.nav-home{
-  display: grid;
-  height: 75px;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.home_icon{
-  margin-top: 15px;
-  display: flex;
-  size-adjust: 100px;
-}
 
 .checkbtn{
   font-size: 30px;
@@ -152,30 +169,104 @@ height:0;
   display: none;
 }
 
-
-.nav-menu-right{
-    display: inline-block; /*Hace que los elementos pasen de vertical a horizontal*/
-    width: 100%;
-    margin-top: 5px;
-    margin-left: 10px;
+.searchnav{
+  width: 100%;
+  height: 48px;
+  font-size: 30px;
+  padding: 4px 2px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  grid-row: 2;
 }
+
+.searchnav ul {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*.searchnav a{
+  color: #000000;
+}*/
+
+.barrabusqueda{
+  /*display: block;*/
+  margin-top: 500px;
+  font-size: 24px;
+  width: 720px;
+  z-index: 9;/*Investigar funcion*/
+}
+
+#box-search{
+  position: fixed;
+  top: 112px;
+  left: 50%; /*Para desplazar hacia la izquierda*/
+  transform: translateX(-50%); /*Para desplazar a la derecha y centralizar*/
+  width: 1200px;
+  background: #fff;
+  z-index: 8;
+}
+
+#box-search li a{
+  display: block;
+  width: 1200px;
+  color: #7a7272;
+  padding: 12px 20px;
+}
+
+#box-search li a:hover{
+  background: #f3f3f3;
+}
+
+#box-search li a i{
+  color: #7a7272;
+  margin-right: 10px;
+}
+
+/* Buscador de contenido*/
+
+.ctn_icon_search{
+  position: absolute;
+  right: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ctn_icon_search i{
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+#ctn_icon_search i:hover{
+  color: #0099ff;
+}
+
+.icon_search{
+  width: 18px;
+  height: auto;
+  margin-top: 8px;
+  grid-column: 1;
+}
+
+
+#cover-ctn-search{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  background: #00000080;
+  z-index: 7;
+}
+
+
 
 /* ================================================================================================================================
 Body*/
-.searchnav{
-  font-size: 30px;
-  padding: 21px 8px;
-}
-
-.barrabusqueda{
-  font-size: 24px;
-  width: 420px;
-  border-color: #061c1c;
-}
 
 .main-home{
     display: grid;
-    width: 172vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
+    width: 178vh; /*Area visible del navegador. Area permanece uniforme al hacer zoom out*/
     height: 150vh;
     /*grid-template-columns: 1fr 4fr 1fr;*/
    /* grid-template-rows: 50% 50%;*/
@@ -183,11 +274,11 @@ Body*/
     background-size: cover;*/
     background-color: antiquewhite;
     grid-template-rows: auto auto auto;
-    margin: 114px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
+    margin: 126px auto 60px auto; /*Orden de aplicacion de este margin: arriba, derecha, abajo, izquierda*/
     background-size: cover;
     background-position: center center;
-
 }
+
 
 [data-animation = "show"]{
   opacity: 0;
@@ -260,6 +351,7 @@ Body*/
   font-size: 32px;
   justify-content: space-between;
 }
+
 
 .social-icons a.active, .social-icons a:hover{
   background-color: #fff;
