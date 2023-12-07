@@ -60,6 +60,21 @@
         left: -2%;
     }
 
+    .header{
+        width: 100%;
+    }
+    .searchnav{
+        width: 100%;
+    }
+    .barrabusqueda,
+    #inputSearch {
+        width: 100%;
+        
+      }
+
+      
+
+
 
 }
 
