@@ -838,6 +838,22 @@ CONTACTO*/
   height: 120px;
 }
 
+.contn_enviar{
+  padding: 5px;
+  /*float:left;*/
+  left: 50%; /*Para desplazar hacia la izquierda*/
+
+}
+
+.btn_enviar{
+  font-size: 21px;
+  background-color: #a4d0e2;
+  border-radius: 13%;
+  width: 120px;
+  height: 42px;
+
+}
+
 /*================================================================================================================================*/
 
 /*
