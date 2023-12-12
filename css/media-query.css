@@ -4,14 +4,16 @@
     /*Adaptar el nav main para que sus elementos sean desplazados al achicar la pantalla */
 
     .nav-main{
-        width: 100%;
+        width: 750px;
+        margin-left: -250px;
+
        /* float: left;*/
     }
   .nav-menu-right{
     padding-left: 20px;
   }
   .menu__link {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .main-home{
@@ -25,6 +27,12 @@
 
 }
 
+@media screen and (max-width: 1492px){
+
+    
+
+}
+
 @media screen and (max-width: 3200px){
     
 }
@@ -34,13 +42,13 @@
 
     .icon_search{
         position: fixed;
-        font-size: 20px;
-        margin: 5px 0 0 35%;
+        font-size: 30px;
+        margin: 5px 0 0 65%;
     }
     .checkbtn{
         position: fixed;
         display: block;
-        margin: 5px 0 0 40%;
+        margin: 5px 0 0 70%;
     }
 
      .nav-menu-right{
@@ -98,55 +106,12 @@
         width: 100%;
     }
 
-
-      
-
-
-
-}
-
-@media screen and (max-width: 730px){
-
-    .header{
-        width: 100%;
-    }
-
-    .header_menu{
-        width: 100%;
-    }
-
-    .menu{
-        width: 100%;
-    }
-
-    .icon_search{
-        position: fixed;
-        font-size: 20px;
-        margin: 5px 0 0 48%;
-    }
-
-    .checkbtn{
-        position: fixed;
-        width: 80px;
-        height: 60px;
-        font-size: 30px;
-        margin: 5px 0 0 50%;
-    }
-
-    .footerPie{
-        width: 100%;
-    }
-
-    .social-icons{
-        width: 100%;
-    }
-
 }
 
 @media screen and (max-width: 412px){
     /*Experimentando */
     body{
-       height: fit-content;
+       height: 300vh;
         
     }
 
@@ -202,6 +167,7 @@
     }
     .prof_figure{
         width: 100%;
+        grid-row: 1;
     }
 
     .prof_figure img{
@@ -209,18 +175,13 @@
         height: 20px;
     }
 
-
-
-    /*Hasta aqui*/
-
-
     .main-home{
         width: 100%;
-        height: 2600px;
+        margin-bottom: 880px;
     }
 
     .footerPie{
-        width: 100%;
+        width: 100%;     
     }
 
     .social-icons{
@@ -228,172 +189,126 @@
         margin: 8px auto;
     }
 
+    .item-1 {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+    }
+
+    .item-1 div{
+        grid-row: 2;
+    }
+
 
 }
+
+@media screen and (max-width: 678px){
+
+    body{
+        height: 100%;
+         
+     }
+ 
+     .header{
+         width: 100%;
+         height: 54px
+     }
+ 
+     .header_menu{
+         width: 100%;
+     }
+ 
+     .menu{
+         width: 100%;
+     }
+ 
+     .nav-home{
+         width: 130px;
+     }
+ 
+     .home_icon{
+         width: 100%;
+     }
+ 
+     .nav-main{
+         width: 100%;
+     }
+
+     .main-home{
+        height: 1200px;
+     }
+
+     .footerPie{
+        margin-top: 50%;
+     }
+
+}
+
+@media screen and (max-width: 606px){
+
+     .footerPie{
+        margin-top: 72%;
+     }
+
+}
+
+
+@media screen and (max-width: 564px){
+
+    body{
+        height: 260vh;
+         
+     }
+
+    .footerPie{
+       margin-top: 125%;
+    }
+
+}
+
+
+@media screen and (max-width: 730px){
+
+    .header{
+        width: 100%;
+    }
+
+    .header_menu{
+        width: 100%;
+    }
+
+    .menu{
+        width: 100%;
+    }
+
+    .icon_search{
+        position: fixed;
+        font-size: 20px;
+        margin: 5px 0 0 85%;
+    }
+
+    .checkbtn{
+        position: fixed;
+        width: 80px;
+        height: 60px;
+        font-size: 30px;
+        margin: 5px 0 0 87%;
+    }
+
+    .footerPie{
+        width: 100%;
+    }
+
+    .social-icons{
+        width: 100%;
+    }
+
+}
+
+
+
 
 
 
 
 /*Alt +126 para Virgulilla*/
-
-
-@media screen and (max-width: 1060px){
-    .posts{
-        padding: 20px;
-    }
-}
-
-@media screen and (min-height: 600px) and (min-width: 600px) and (max-width: 1060px){
-    .header{
-        width: 1000px;
-      }
-   
-}
-
-
-@media screen and (max-width: 800px){
-    /*Pagina de Inicio */
-
-    /*Página de BLOGS */
-    .news{
-        padding: 20px;
-    }
-    .news-content{
-        grid-template-columns: auto auto;
-    }
-    .news-content img{
-        width: 90%;
-        padding: 10px;
-    }
-
-    .posts-blog{
-        max-width: 45%;
-    }
-    
-
-    /*Página de Blog*/
-    .main-blog{
-        padding: 20px;
-    }
-    .main-blog__content img{
-        padding: 0;
-    }
-    .blog-content__article{
-        padding: 0;
-    }
-
-    .section-contact{
-        padding: 20px;
-    }
-    .contact{
-        display: grid;
-        margin: 0px;
-    }
-
-    /*Página de Perfil*/
-    .profile{
-        padding: 20px;
-    }
-
-    .profile-img img{
-        width: 90%;
-    }
-
-    .projects-container{
-        padding: 20px;
-    }
-    .project{
-        max-width: 45%;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 500px){
-    /*Pagina de Inicio */
-    .social-icons{
-        width: 100%;
-        padding: 0 5px 0;
-        margin: 0;
-    }
-    .nav-logo{
-        display: flex;
-        align-items: center;
-    }
-    .nav-logo, .nav-link{
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    .nav-logo img{
-        width: 150px;
-    }
-
-    .main-container__text{
-        font-size: 25px;
-    }
-
-    /*Página de BLOGS */
-    .blogs-main{
-        padding: 0;
-    }
-    .news{
-        width: 100%;
-        padding: 10px;
-    }
-    .news-content{
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-    }
-    .news-content img{
-        grid-row: 2;
-    }
-    .news-content .news-info{
-        grid-row: 3;
-        grid-column: 1;
-    }
-    .posts{
-        width: 100%;
-        padding: 10px;
-    }
-    .posts-blog{
-        max-width: 100%;
-    }
-
-    /*Página de Blog*/
-    .main-blog{
-        padding: 10px;
-    }
-    .main-blog__content img{
-        padding: 0;
-    }
-    .blog-content__article{
-        padding: 0;
-    }
-
-    .section-contact{
-        padding: 10px;
-        display: grid;
-    }
-    .contact{
-        display: grid;
-        margin: 0px;
-    }
-
-    /*Página de Perfil*/
-    .profile{
-        padding: 10px;
-        display: grid;
-    }
-
-    .profile-img img{
-        width: 100%;
-    }
-
-    .projects-container{
-        padding: 10px;
-    }
-    .project{
-        padding: 0;
-        max-width: 100%;
-        text-align: center;
-    }
-}
