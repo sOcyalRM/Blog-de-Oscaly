@@ -360,6 +360,10 @@ Body*/
   border-top:solid 1px #110d0d; /*Para crear linea en parte superior que separa elementos*/
 }
 
+.footerPie a{
+  color:#000000;
+}
+
 .social-icons{
   display: flex;
   width: 800px;
